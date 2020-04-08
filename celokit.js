@@ -41,7 +41,7 @@ getcUSDBalance(sender);
 createCeloAccount()
 
 async function createCeloAccount(){
-    // TO CREATE A NEW RANDOM SEED PHRASE .....uncomment...
+    // TO CREATE A NEW RANDOM SEED PHRASE .....uncomment....
     // let mnemonic = bip39.generateMnemonic(256); 
     
     // USING AN EXISTING SEED PHRASE e.g from ANOTHER HD WALLET
