@@ -16,10 +16,10 @@ const ensureLeading0x = (input) => (input.startsWith('0x') ? input : `0x${input}
 const hexToBuffer = (input) => Buffer.from(trimLeading0x(input), 'hex');
 
 
-let sender = '0xF98F92a2B78C497F963666fd688620cd5095A251';
-let receiver = '0x0E763c1Ac3BD9f6AD52D62877F677488b353DF66';
+let sender = SENDER_PUBLIC_ADDRESS;
+let receiver = RECEIVER_PUBLIC_ADDRESS;
 let amount = '0.2';
-let privatekey = 'b9b10dd7f800bfb537ff28d4e3c3abce81f4bac90fbc480bec7909947263738f';
+let privatekey = SENDER_PRIVATE_KEY;
 
 // Send Celo USD
 sendcUSD(sender, receiver, amount, privatekey)
